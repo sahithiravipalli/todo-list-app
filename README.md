@@ -3,4 +3,4 @@
 Simple task manager built with HTML, CSS and JavaScript.
 
 ## Screenshot
-![Todo App Screenshot](todo-app.png)
+![Todo App Screenshot](screenshot.png)
