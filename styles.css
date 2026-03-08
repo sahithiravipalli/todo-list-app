@@ -1,0 +1,65 @@
+body
+{
+  font-family: Arial;
+  background: #1e293b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container
+{
+    background: #334155;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+  
+input
+{
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+}
+
+button
+{
+    padding: 10px;
+    background: #4facfe;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button :hover
+{
+    background: #3b82f6;
+}
+
+ul
+{
+    margin-top: 20px;
+    padding: 0;
+}
+
+li
+{
+    list-style: none;
+    background: #1e293b;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.completed
+{
+    text-decoration: line-through;
+    color: gray;
+}
