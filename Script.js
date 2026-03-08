@@ -1,9 +1,11 @@
-function addTask(){
+function addTask()
+{
 
 let input = document.getElementById("taskInput")
 let taskText = input.value
 
-if(taskText === ""){
+if(taskText === "")
+{
 alert("Please enter a task")
 return
 }
@@ -18,14 +20,16 @@ updateCount()
 
 }
 
-function createTask(taskText){
+function createTask(taskText)
+{
 
 let li = document.createElement("li")
 
 let task = document.createElement("span")
 task.textContent = taskText
 
-task.onclick = function(){
+task.onclick = function()
+{
 task.classList.toggle("completed")
 saveTasks()
 }
@@ -34,7 +38,8 @@ let deleteBtn = document.createElement("button")
 deleteBtn.textContent = "Delete"
 deleteBtn.className = "delete-btn"
 
-deleteBtn.onclick = function(){
+deleteBtn.onclick = function()
+{
 li.remove()
 saveTasks()
 updateCount()
@@ -47,12 +52,13 @@ document.getElementById("taskList").appendChild(li)
 
 }
 
-function saveTasks(){
+function saveTasks()
+{
 
 let tasks=[]
 
 document.querySelectorAll("#taskList li span").forEach(task=>{
-tasks.push(task.textContent)
+  tasks.push(task.textContent)
 })
 
 localStorage.setItem("tasks",JSON.stringify(tasks))
@@ -78,5 +84,4 @@ let count=document.querySelectorAll("#taskList li").length
 document.getElementById("taskCount").textContent="Tasks: "+count
 
 }
-
 loadTasks()
